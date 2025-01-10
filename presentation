@@ -1,0 +1,74 @@
+To-Do Application in Python
+
+This Python-based console application helps to manage their tasks. With features to add, view, mark complete, delete, and check overdue tasks, it is a practical tool for personal productivity.
+Key Features
+
+    Add a Task
+        Allows users to add tasks with a specified name and deadline.
+        Example: "Task: Finish report, Deadline: 12.01.25"
+
+    View Tasks
+        Displays all tasks along with their statuses: Pending or Completed.
+
+    Mark a Task as Complete
+        Marks a task as done and checks whether it was finished on time, just in time, or overdue.
+
+    Delete a Task
+        Removes a task by its name.
+
+    View Overdue Tasks
+        Identifies tasks that have missed their deadlines.
+
+Code Walkthrough
+
+    Main Structure:
+    The main() function provides a menu-driven loop where users can select different actions: adding tasks, viewing tasks, marking them complete, and more.
+
+    Key Functions:
+
+        add_task(tasks, task_name, deadline)
+        Adds a new task to the dictionary with its deadline and initial status as pending.
+
+        view_tasks(tasks)
+        Lists all tasks with their details and statuses.
+
+        mark_task_complete(tasks, task_name)
+        Marks the task as complete and compares the current time to the deadline. Provides feedback on whether the task was completed on time.
+
+        delete_task(tasks, task_name)
+        Deletes the specified task from the dictionary.
+
+        view_overdue_tasks(tasks)
+        Compares each task's deadline to the current date and identifies overdue tasks.
+
+Example Scenarios
+
+    Adding a Task:
+        Input: "Task name: Buy groceries, Deadline: 15.01.25"
+        Output: "Task added: Buy groceries with deadline 15.01.25"
+
+    Marking a Task as Complete:
+        Input: "Task name: Buy groceries"
+        Output:
+            "Great job! Task 'Buy groceries' was completed before the deadline!"
+            Or: "You've missed the deadline, try harder next time."
+
+    Viewing Overdue Tasks:
+        Lists tasks that are pending and whose deadlines have passed.
+
+Conclusion
+
+Why This Application?
+
+    A practical tool for task management.
+    Highlights overdue tasks to encourage better productivity.
+
+Potential Enhancements:
+
+    Introduce a graphical user interface (GUI) or a web-based front end.
+    Enable notifications or alerts for approaching deadlines.
+
+Takeaway:
+This application showcases how Python can be used for real-world problems, using dictionaries for data storage, the datetime module for date handling, and a menu-driven structure for user interaction.
+
+Let me know if you’d like me to create or format this document for you!
